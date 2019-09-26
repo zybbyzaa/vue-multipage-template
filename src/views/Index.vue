@@ -11,7 +11,7 @@ export default {
   methods: {
     gotoSubPage() {
       this.$router.push({
-        name: "subpage"
+        path: "subpage.htm"
       });
     }
   }

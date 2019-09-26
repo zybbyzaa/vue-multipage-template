@@ -12,15 +12,6 @@ export default new Router({
       path: "/index.htm",
       name: "index",
       component: Index
-    },
-    {
-      path: "/subpage.htm",
-      name: "subpage",
-      // route level code-splitting
-      // this generates a separate chunk (subpage.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "subpage" */ "@/views/Subpage.vue")
     }
   ]
 });
