@@ -17,3 +17,8 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.index {
+  background-color: $bg-color;
+}
+</style>

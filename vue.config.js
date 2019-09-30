@@ -13,6 +13,13 @@ module.exports = {
     return result;
   }, {}),
   publicPath: "/my-app/",
+  css: {
+    loaderOptions: {
+      scss: {
+        data: `@import "~@/assets/scss/variables.scss";`
+      }
+    }
+  },
   chainWebpack: config => {
     pages.forEach(page => {
       config.plugin(`html-${page}`).tap(args => {

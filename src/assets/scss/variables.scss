@@ -1,0 +1,6 @@
+$rem-base: 37.5px;
+$bg-color: #e5e5e5;
+
+@function px2rem($px) {
+  @return $px / $rem-base + rem;
+}
